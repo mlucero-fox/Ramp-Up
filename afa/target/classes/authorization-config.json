@@ -1,0 +1,49 @@
+{
+    "proxyURM" : {
+        "endpoint":{
+            "host": "rest-dev.evergent.com",
+            "port": 443,
+            "ssl": true,
+        "truststore":{
+            "password":"fox2017$"
+            }
+        },
+        "circuitBreaker":{
+        "name": "URMCircuitBreaker",
+            "maxfailure": 1,
+            "timeout": 10000,
+            "resettimeout": 5000
+        }
+    },
+    "proxyVMS" : {
+        "endpoint":{
+            "host": "euid.theplatform.com",
+            "port": 443,
+            "ssl": true,
+            "truststore":{
+                "password":"fox2017$"
+            }
+ 
+        },
+        "circuitBreaker":{
+            "name": "VMSCircuitBreaker",
+            "maxfailure": 1,
+            "timeout": 10000,
+            "resettimeout": 5000
+        }
+    },
+ 
+    "authorizationService" :{
+        "httpPort": 8082,
+        "httpMethod":"POST",
+        
+         "webClientOptions": {
+            "keepAlive": true,
+            "idleTimeout": 60,
+            "maxPoolSize": 30,
+            "pipelining": false,
+            "pipeliningLimit": 15
+        }
+    }
+ 
+}

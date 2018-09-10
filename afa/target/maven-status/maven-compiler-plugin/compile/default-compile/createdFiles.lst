@@ -1,0 +1,5 @@
+com\fox\platform\training\serv\ProxyTrainingVerticle.class
+com\fox\platform\anti\TrainingAnticorruption.class
+com\fox\platform\training\serv\RestTrainingVerticle.class
+com\fox\platform\training\repo\TrainingRepository.class
+com\fox\platform\training\main\Main.class
